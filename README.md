@@ -9,16 +9,39 @@ English-to-Chinese translation with grammar analysis, vocabulary explanations, a
 
 ## Quick Start
 
-To use a skill:
+To install and use a skill:
 1. Navigate to the skill's folder for detailed documentation
-2. Install by copying the skill folder to your Claude Code skills directory
-3. Invoke using the skill command (e.g., `/translate`)
+2. Create a ZIP file of the skill folder (ensure the folder is the root of the ZIP)
+3. Install the ZIP file in Claude Code via the skills management interface
+4. Invoke using the skill command (e.g., `/translate`)
 
 ## Structure
 
 Each skill is organized in its own folder containing:
 - `skill.md` - The skill definition and prompt
 - `README.md` - Detailed documentation and usage guide
+
+## Packaging Your Skill
+
+To create a proper skill package:
+
+1. Ensure the folder name matches your skill's name
+2. Create a ZIP file of the folder
+3. The ZIP should contain the skill folder as its root (not a subfolder)
+
+**Correct structure:**
+```
+translateSkill.zip
+  └── translateSkill/
+      ├── skill.md
+      └── README.md
+```
+
+**Incorrect structure:**
+```
+translateSkill.zip
+  └── skill.md  (files directly in ZIP root - wrong!)
+```
 
 ## Creating Your Own Skills
 

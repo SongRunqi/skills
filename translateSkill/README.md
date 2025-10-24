@@ -38,8 +38,18 @@ The translate skill provides comprehensive English-to-Chinese translation with d
 
 ## Installation
 
-1. Copy the `translateSkill` folder to your Claude Code skills directory
-2. The skill will be available as `/translate`
+1. Create a ZIP file of the `translateSkill` folder
+   - Ensure the ZIP contains the folder as its root: `translateSkill.zip → translateSkill/ → skill.md`
+2. Install the ZIP file in Claude Code via the skills management interface
+3. The skill will be available as `/translate`
+
+**Packaging:**
+```
+translateSkill.zip
+  └── translateSkill/
+      ├── skill.md
+      └── README.md
+```
 
 ## Usage
 
